@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DisplayCases>
+    <DisplayCase>
+        <name>Main Display Case</name>
+        <trays>
+            <DisplayTray>
+                <name>Ring Tray</name>
+                <items>
+                    <JewelleryItem>
+                        <id>ITEM-001</id>
+                        <type>Ring</type>
+                        <description>Gold Diamond Ring - 18K Gold with 1.5ct Diamond</description>
+                        <material>Gold</material>
+                        <weight>5.2g</weight>
+                        <price>2500.00</price>
+                    </JewelleryItem>
+                    <JewelleryItem>
+                        <id>ITEM-002</id>
+                        <type>Ring</type>
+                        <description>Silver Wedding Ring</description>
+                        <material>Silver</material>
+                        <weight>8.5g</weight>
+                        <price>850.00</price>
+                    </JewelleryItem>
+                </items>
+            </DisplayTray>
+            <DisplayTray>
+                <name>Necklace Tray</name>
+                <items>
+                    <JewelleryItem>
+                        <id>ITEM-003</id>
+                        <type>Necklace</type>
+                        <description>Pearl Strand Necklace</description>
+                        <material>Pearl</material>
+                        <weight>25g</weight>
+                        <price>450.00</price>
+                    </JewelleryItem>
+                </items>
+            </DisplayTray>
+        </trays>
+    </DisplayCase>
+    <DisplayCase>
+        <name>Wall Display Case</name>
+        <trays>
+            <DisplayTray>
+                <name>Watch Tray</name>
+                <items>
+                    <JewelleryItem>
+                        <id>ITEM-004</id>
+                        <type>Watch</type>
+                        <description>Luxury Swiss Watch - Leather Strap</description>
+                        <material>Stainless Steel</material>
+                        <weight>150g</weight>
+                        <price>3200.00</price>
+                    </JewelleryItem>
+                </items>
+            </DisplayTray>
+        </trays>
+    </DisplayCase>
+</DisplayCases>

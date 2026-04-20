@@ -1,0 +1,21 @@
+.sidebar-box {
+    -fx-padding: 10px;
+}
+
+.sidebar-box .button {
+    -fx-pref-height: 30px;
+    -fx-wrap-text: true;
+}
+
+.sidebar-box .text-field {
+    -fx-pref-height: 30px;
+}
+
+Button {
+    -fx-pref-height: 30px;
+    -fx-wrap-text: true;
+}
+
+TextField {
+    -fx-pref-height: 30px;
+}

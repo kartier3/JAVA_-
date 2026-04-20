@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "main.java.Main",
+            "projectName": "jewellery-store",
+            "vmArgs": [
+                "--module-path",
+                "C:\\Users\\radzi\\.m2\\repository\\org\\openjfx\\javafx-controls\\21\\javafx-controls-21.jar;C:\\Users\\radzi\\.m2\\repository\\org\\openjfx\\javafx-controls\\21\\javafx-controls-21-win.jar;C:\\Users\\radzi\\.m2\\repository\\org\\openjfx\\javafx-fxml\\21\\javafx-fxml-21.jar;C:\\Users\\radzi\\.m2\\repository\\org\\openjfx\\javafx-fxml\\21\\javafx-fxml-21-win.jar;C:\\Users\\radzi\\.m2\\repository\\org\\openjfx\\javafx-base\\21\\javafx-base-21.jar;C:\\Users\\radzi\\.m2\\repository\\org\\openjfx\\javafx-base\\21\\javafx-base-21-win.jar;C:\\Users\\radzi\\.m2\\repository\\org\\openjfx\\javafx-graphics\\21\\javafx-graphics-21.jar;C:\\Users\\radzi\\.m2\\repository\\org\\openjfx\\javafx-graphics\\21\\javafx-graphics-21-win.jar",
+                "--add-modules",
+                "javafx.controls,javafx.fxml,javafx.graphics"
+            ],
+            "classPaths": [
+                "${workspaceFolder}/target/classes"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleMain",
+            "request": "launch",
+            "mainClass": "main.java.SimpleMain",
+            "projectName": "jewellery-store",
+            "classPaths": [
+                "${workspaceFolder}/target/classes"
+            ]
+        }
+    ]
+}

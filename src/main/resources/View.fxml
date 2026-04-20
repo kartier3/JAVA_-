@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@style.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.SimpleController">
+
+   <left>
+      <VBox prefHeight="200.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER" styleClass="sidebar-box">
+         <children>
+            <Button maxWidth="Infinity" onAction="#listStockBtn" text="List All Stock" wrapText="true" />
+            <Button maxWidth="Infinity" onAction="#valueStockBtn" text="Value Stock" wrapText="true" />
+            <Separator />
+            
+            <Separator />
+            <Button maxWidth="Infinity" onAction="#saveBtn" text="Save Data" wrapText="true" />
+            <Button maxWidth="Infinity" onAction="#loadBtn" text="Load Data" wrapText="true" />
+            <Separator />
+            <Button maxWidth="Infinity" onAction="#resetBtn" styleClass="danger-btn" text="Reset System" />
+            <TextField fx:id="searchInput" promptText="Search words (comma sep)" />
+            <Button maxWidth="Infinity" onAction="#searchBtn" text="Search" wrapText="true" />
+         </children>
+      </VBox>
+   </left>
+
+   <center>
+      <TabPane tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+         <tabs>
+
+            <Tab text="Console">
+               <content>
+                  <TextArea fx:id="outputArea" editable="false" />
+               </content>
+            </Tab>
+
+            <Tab text="Smart Add">
+               <content>
+                  <VBox spacing="10" styleClass="form-container">
+                     <Label styleClass="form-title" text="Add to Store" />
+                     
+                     <!-- Add Case Section -->
+                     <VBox spacing="5" styleClass="section-box">
+                        <Label text="Add Display Case" style="-fx-font-weight: bold;" />
+                        <HBox spacing="10">
+                           <TextField fx:id="caseNameInput" promptText="Case Name" HBox.hgrow="ALWAYS" />
+                           <TextField fx:id="caseLocationInput" promptText="Location" HBox.hgrow="ALWAYS" />
+                        </HBox>
+                        <Button onAction="#addCaseBtn" styleClass="success-btn" text="Add Case" wrapText="true" />
+                     </VBox>
+                     
+                     <!-- Add Tray Section -->
+                     <VBox spacing="5" styleClass="section-box">
+                        <Label text="Add Display Tray" style="-fx-font-weight: bold;" />
+                        <ComboBox fx:id="caseSelectInput" promptText="Select Case" />
+                        <TextField fx:id="trayTypeInput" promptText="Tray Type (e.g. Ring, Necklace)" />
+                        <Button onAction="#addTrayBtn" styleClass="success-btn" text="Add Tray" wrapText="true" />
+                     </VBox>
+                     
+                     <!-- Add Item Section -->
+                     <VBox spacing="5" styleClass="section-box">
+                        <Label text="Add Jewellery Item" style="-fx-font-weight: bold;" />
+                        <ComboBox fx:id="caseSelectForItemInput" promptText="Select Case" />
+                        <ComboBox fx:id="traySelectInput" promptText="Select Tray" />
+                        <TextField fx:id="itemIdInput" promptText="Item ID (e.g. ITEM-001)" />
+                        <TextField fx:id="itemTypeInput" promptText="Item Type (e.g. Ring)" />
+                        <TextField fx:id="itemDescInput" promptText="Description" />
+                        <Button onAction="#addItemBtn" styleClass="success-btn" text="Add Item" wrapText="true" />
+                     </VBox>
+                     <!--mAdd Material-->
+                     <VBox spacing="5" styleClass="section-box">
+                        <Label text="Add Item Material" style="-fx-font-weight: bold;" />
+                        <ComboBox fx:id="caseSelectForItemInput" promptText="Select Case" />
+                        <ComboBox fx:id="traySelectInput" promptText="Select Tray" />
+                        <TextField fx:id="itemIdInput" promptText="Item ID (e.g. ITEM-001)" />
+                        <TextField fx:id="itemTypeInput" promptText="Item Type (e.g. Ring)" />
+                        <TextField fx:id="itemDescInput" promptText="Description" />
+                        <Button onAction="#addItemBtn" styleClass="success-btn" text="Add Item" wrapText="true" />
+                     </VBox>
+                  </VBox>
+               </content>
+            </Tab>
+
+            <Tab text="Drill Down">
+               <content>
+                  <HBox spacing="10" styleClass="drill-down-container">
+                     <VBox HBox.hgrow="ALWAYS">
+                        <Label text="1. Select Case" />
+                        <ListView fx:id="caseList" onMouseClicked="#caseClicked" />
+                     </VBox>
+                     <VBox HBox.hgrow="ALWAYS">
+                        <Label text="2. Select Tray" />
+                        <ListView fx:id="trayList" onMouseClicked="#trayClicked" />
+                     </VBox>
+                     <VBox HBox.hgrow="ALWAYS" spacing="5">
+                        <Label text="3. Items Details" />
+                        <TextArea fx:id="drillDownDetails" editable="false" VBox.vgrow="ALWAYS" onMouseClicked="#detailsClicked" />
+                        <HBox spacing="5">
+                           <TextField fx:id="deleteItemIdInput" promptText="Enter Item ID to delete" HBox.hgrow="ALWAYS" />
+                           <Button onAction="#deleteItemByIdBtn" styleClass="danger-btn" text="Delete by ID" wrapText="true" />
+                        </HBox>
+                        <Button maxWidth="Infinity" onAction="#deleteItemBtn" styleClass="danger-btn" text="Delete Selected Item" wrapText="true" />
+                     </VBox>
+                  </HBox>
+               </content>
+            </Tab>
+
+         </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

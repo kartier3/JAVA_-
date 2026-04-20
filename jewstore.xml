@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JewelleryStore>
+  <DisplayCase>
+    <caseId>CASE-001</caseId>
+    <caseName>Main Display Case</caseName>
+    <location>Front of Store</location>
+    <trays>
+      <DisplayTray>
+        <trayId>TRAY-001</trayId>
+        <trayType>Ring</trayType>
+        <items>
+          <JewelleryItem>
+            <itemId>ITEM-001</itemId>
+            <type>Ring</type>
+            <description></description>
+            <materials>
+              <MaterialComponent>
+                <materialName>Gold</materialName>
+                <description></description>
+                <weight>5.2</weight>
+                <caratValue>1.5</caratValue>
+              </MaterialComponent>
+              <MaterialComponent>
+                <materialName>Diamond</materialName>
+                <description></description>
+                <weight>0.3</weight>
+                <caratValue>1.5</caratValue>
+              </MaterialComponent>
+            </materials>
+          </JewelleryItem>
+          <JewelleryItem>
+            <itemId>ITEM-002</itemId>
+            <type>Ring</type>
+            <description></description>
+            <materials>
+              <MaterialComponent>
+                <materialName>Diamond</materialName>
+                <description></description>
+                <weight>0.5</weight>
+                <caratValue>5000.0</caratValue>
+              </MaterialComponent>
+            </materials>
+          </JewelleryItem>
+          <JewelleryItem>
+            <itemId>ITEM-1776683484843</itemId>
+            <type>Ring</type>
+            <description>Gold Diamond Ring</description>
+            <materials>
+              <MaterialComponent>
+                <materialName>Gold</materialName>
+                <description>18K Yellow Gold</description>
+                <weight>5.0</weight>
+                <caratValue>40.0</caratValue>
+              </MaterialComponent>
+              <MaterialComponent>
+                <materialName>Diamond</materialName>
+                <description>Round Brilliant Cut</description>
+                <weight>0.5</weight>
+                <caratValue>10000.0</caratValue>
+              </MaterialComponent>
+            </materials>
+          </JewelleryItem>
+        </items>
+      </DisplayTray>
+      <DisplayTray>
+        <trayId>TRAY-002</trayId>
+        <trayType>Necklace</trayType>
+        <items>
+          <JewelleryItem>
+            <itemId>ITEM-003</itemId>
+            <type>Necklace</type>
+            <description></description>
+            <materials>
+              <MaterialComponent>
+                <materialName>Pearl</materialName>
+                <description></description>
+                <weight>2.5</weight>
+                <caratValue>0.0</caratValue>
+              </MaterialComponent>
+              <MaterialComponent>
+                <materialName>Gold</materialName>
+                <description></description>
+                <weight>0.8</weight>
+                <caratValue>0.0</caratValue>
+              </MaterialComponent>
+            </materials>
+          </JewelleryItem>
+        </items>
+      </DisplayTray>
+    </trays>
+  </DisplayCase>
+  <DisplayCase>
+    <caseId>CASE-002</caseId>
+    <caseName>Wall Display Case</caseName>
+    <location>East Wall</location>
+    <trays>
+      <DisplayTray>
+        <trayId>TRAY-003</trayId>
+        <trayType>Watch</trayType>
+        <items>
+          <JewelleryItem>
+            <itemId>ITEM-004</itemId>
+            <type>Watch</type>
+            <description></description>
+            <materials>
+              <MaterialComponent>
+                <materialName>Stainless Steel</materialName>
+                <description></description>
+                <weight>25.0</weight>
+                <caratValue>0.0</caratValue>
+              </MaterialComponent>
+              <MaterialComponent>
+                <materialName>Leather</materialName>
+                <description></description>
+                <weight>15.0</weight>
+                <caratValue>1.0</caratValue>
+              </MaterialComponent>
+              <MaterialComponent>
+                <materialName>Sapphire Crystal</materialName>
+                <description></description>
+                <weight>2.0</weight>
+                <caratValue>0.5</caratValue>
+              </MaterialComponent>
+            </materials>
+          </JewelleryItem>
+        </items>
+      </DisplayTray>
+    </trays>
+  </DisplayCase>
+</JewelleryStore>
